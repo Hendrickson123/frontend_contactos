@@ -11,7 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
     lista.innerHTML = "";
     datos.forEach(c => {
       const li = document.createElement("li");
-      li.textContent = `${c.nombre} - ${c.correo}`;
+      li.innerHTML = `${c.nombre} - ${c.correo} <button data-id="${c._id}">🗑</button>`;
+      li.querySelector("button").addEventListener("click", async () => {
+  await fetch(`${API_URL}/${c._id}`, { method: "DELETE" });
+  cargarContactos(); // actualiza lista
+});
+
       lista.appendChild(li);
     });
   };
