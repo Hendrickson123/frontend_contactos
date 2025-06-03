@@ -1,4 +1,5 @@
-const API_URL = "https://mi-backend-agenda.onrender.com/contactos";
+
+const API_URL = "https://mi-backend-agenda.onrender.com/api/contactos";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
