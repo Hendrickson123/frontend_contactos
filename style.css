@@ -1,0 +1,55 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#lista-contactos {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-contactos li {
+  background: #e3f2fd;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
